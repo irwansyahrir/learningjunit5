@@ -24,7 +24,7 @@ class AssertionsDemo {
         // failures will be reported together.
         assertAll("person",
                 () -> assertEquals("John", person.getFirstName()),
-                () -> assertEquals("Doe", person.getLastName())
+                () -> assertEquals("Doe2", person.getLastName())
         );
     }
 
