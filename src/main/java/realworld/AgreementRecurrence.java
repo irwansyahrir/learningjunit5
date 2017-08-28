@@ -1,5 +1,5 @@
 package realworld;
 
-public enum StandingOrderRecurrence {
+public enum AgreementRecurrence {
     DAILY, MONTHLY
 }

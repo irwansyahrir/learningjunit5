@@ -1,5 +1,5 @@
 package realworld;
 
-public enum StandingOrderType {
+public enum AgreementType {
     PERIODIC
 }

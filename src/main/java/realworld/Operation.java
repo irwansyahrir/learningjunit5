@@ -1,5 +1,5 @@
 package realworld;
 
-public enum StandingOrderOperation {
+public enum Operation {
     DELETE, UPDATE, VIEW
 }
