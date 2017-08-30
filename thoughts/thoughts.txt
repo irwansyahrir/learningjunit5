@@ -1,0 +1,6 @@
+What is JUnit5 good for?
+
+- Reporting
+- Documentation
+- TDD?
+- Performance testing?
