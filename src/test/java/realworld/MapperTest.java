@@ -73,10 +73,10 @@ public class MapperTest
     @Test
     public void testMapKey() throws Exception
     {
-        Payment payment = new Payment();
-        payment.setAgreementExternal(createAgreementExternal());
-        payment.setAgreementExternalKey(createAgreementExternal().getKey());
-        AgreementDTOReference dtoReference = mapper.mapReference(payment);
+        PaymentSO paymentSO = new PaymentSO();
+        paymentSO.setAgreementExternal(createAgreementExternal());
+        paymentSO.setAgreementExternalKey(createAgreementExternal().getKey());
+        AgreementDTOReference dtoReference = mapper.mapReference(paymentSO);
 
         assertThat(dtoReference.standingOrderId, is(123L));
         assertThat(dtoReference.version, is(456L));

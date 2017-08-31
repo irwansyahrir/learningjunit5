@@ -1,6 +1,6 @@
 package realworld;
 
-public class Payment {
+public class PaymentSO {
     private AgreementExternal agreementExternal;
     private AgreementExternal.Key standingOrderKey;
 

@@ -55,7 +55,7 @@ public class DTOMapper {
         return null;
     }
 
-    public AgreementDTOReference mapReference(Payment payment) {
+    public AgreementDTOReference mapReference(PaymentSO paymentSO) {
         return null;
     }
 }
