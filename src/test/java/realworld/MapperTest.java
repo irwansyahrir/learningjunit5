@@ -1,5 +1,6 @@
 package realworld;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
@@ -12,6 +13,7 @@ import static realworld.Operation.DELETE;
 import static realworld.Operation.UPDATE;
 import static realworld.Operation.VIEW;
 
+@Disabled
 public class MapperTest
 {
     private DTOMapper mapper = new DTOMapper();
