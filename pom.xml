@@ -9,10 +9,13 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <junit-platform-version>1.0.0-RC3</junit-platform-version>
-        <junit-jupiter-version>5.0.0-RC3</junit-jupiter-version>
-        <junit-vintage-version>4.12.0-RC3</junit-vintage-version>
-        <java-version>1.8</java-version>
+        <junit.platform.version>1.0.0-RC3</junit.platform.version>
+        <junit.jupiter.version>5.0.0-RC3</junit.jupiter.version>
+        <junit.vintage.version>4.12.0-RC3</junit.vintage.version>
+        <java.version>1.8</java.version>
+        <httpclient.version>4.5.2</httpclient.version>
+        <jackson.version>2.9.0</jackson.version>
+        <commons-lang3.version>3.5</commons-lang3.version>
     </properties>
 
     <build>
@@ -21,8 +24,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>${java-version}</source>
-                    <target>${java-version}</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                 </configuration>
             </plugin>
 
@@ -31,10 +34,11 @@
                 <version>2.19.1</version>
                 <configuration>
                     <includes>
-                        <include>**/Test*.java</include>
-                        <include>**/*Test.java</include>
-                        <include>**/*Tests.java</include>
-                        <include>**/*TestCase.java</include>
+                        <!--<include>**/demo/*Test*.java</include>-->
+                        <!--<include>**/first/*Test*.java</include>-->
+                        <!--<include>**/realworld/*Test*.java</include>-->
+                        <include>**/rest/*Test*.java</include>
+                        <!--<include>**/simulated/*Test*.java</include>-->
                     </includes>
                     <properties>
                         <!-- <includeTags>fast</includeTags> -->
@@ -50,7 +54,7 @@
                     <dependency>
                         <groupId>org.junit.platform</groupId>
                         <artifactId>junit-platform-surefire-provider</artifactId>
-                        <version>${junit-platform-version}</version>
+                        <version>${junit.platform.version}</version>
                     </dependency>
                 </dependencies>
             </plugin>
@@ -62,49 +66,68 @@
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-commons</artifactId>
-            <version>${junit-platform-version}</version>
+            <version>${junit.platform.version}</version>
         </dependency>
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-engine</artifactId>
-            <version>${junit-platform-version}</version>
+            <version>${junit.platform.version}</version>
         </dependency>
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-launcher</artifactId>
-            <version>${junit-platform-version}</version>
+            <version>${junit.platform.version}</version>
         </dependency>
         <dependency>
             <groupId>org.junit.platform</groupId>
             <artifactId>junit-platform-suite-api</artifactId>
-            <version>${junit-platform-version}</version>
+            <version>${junit.platform.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit-jupiter-version}</version>
+            <version>${junit.jupiter.version}</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit-jupiter-version}</version>
+            <version>${junit.jupiter.version}</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-params</artifactId>
-            <version>${junit-jupiter-version}</version>
+            <version>${junit.jupiter.version}</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-migrationsupport</artifactId>
-            <version>${junit-jupiter-version}</version>
+            <version>${junit.jupiter.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.junit.vintage</groupId>
             <artifactId>junit-vintage-engine</artifactId>
-            <version>${junit-vintage-version}</version>
+            <version>${junit.vintage.version}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>${httpclient.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
         </dependency>
     </dependencies>
 

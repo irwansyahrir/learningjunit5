@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assumptions.assumeTrue;
 import static org.junit.jupiter.api.Assumptions.assumingThat;
 
-public class AssumptionsDemo {
+public class AssumptionsDemoTests {
 
     //TODO: imagine scenarios to use Assumptions. This looks like a kind of filter.
 

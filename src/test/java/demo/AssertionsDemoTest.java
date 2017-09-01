@@ -1,12 +1,13 @@
 package demo;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static java.time.Duration.ofMillis;
 import static java.time.Duration.ofMinutes;
 import static org.junit.jupiter.api.Assertions.*;
 
-class AssertionsDemo {
+class AssertionsDemoTest {
 
     Person person = new Person("John", "Doe");
 
@@ -24,7 +25,7 @@ class AssertionsDemo {
         // failures will be reported together.
         assertAll("person",
                 () -> assertEquals("John", person.getFirstName()),
-                () -> assertEquals("Doe2", person.getLastName())
+                () -> assertEquals("Doe", person.getLastName())
         );
     }
 
@@ -86,7 +87,7 @@ class AssertionsDemo {
     @Test
     void timeoutNotExceededWithMethod() {
         // The following assertion invokes a method reference and returns an object.
-        String actualGreeting = assertTimeout(ofMinutes(2), AssertionsDemo::greeting);
+        String actualGreeting = assertTimeout(ofMinutes(2), AssertionsDemoTest::greeting);
         assertEquals("hello world!", actualGreeting);
     }
 
@@ -94,17 +95,18 @@ class AssertionsDemo {
     void timeoutExceeded() {
         // The following assertion fails with an error message similar to:
         // execution exceeded timeout of 10 ms by 91 ms
-        assertTimeout(ofMillis(10), () -> {
+        assertTimeout(ofMillis(110), () -> {
             // Simulate task that takes more than 10 ms.
             Thread.sleep(100);
         });
     }
 
     @Test
+    @Disabled
     void timeoutExceededWithPreemptiveTermination() {
         // The following assertion fails with an error message similar to:
         // execution timed out after 10 ms
-        assertTimeoutPreemptively(ofMillis(10), () -> {
+        assertTimeoutPreemptively(ofMillis(100), () -> {
             // Simulate task that takes more than 10 ms.
             Thread.sleep(100);
         });

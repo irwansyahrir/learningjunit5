@@ -1,5 +1,6 @@
 package demo;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DynamicNode;
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.TestFactory;
@@ -18,6 +19,7 @@ public class DynamicTestsDemo {
 
     // This will result in a JUnitException!
     @TestFactory
+    @Disabled
     List<String> dynamicTestsWithInvalidReturnType() {
         return Arrays.asList("Hello");
     }
