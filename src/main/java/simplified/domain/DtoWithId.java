@@ -1,4 +1,4 @@
-package simulated.domain;
+package simplified.domain;
 
 public interface DtoWithId {
 }

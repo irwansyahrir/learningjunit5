@@ -1,6 +1,7 @@
-package simulated.domain;
+package simplified.domain;
 
 public class TransferDTO implements DtoWithId{
 
     public String transferId;
+    public AgreementDTO agreement;
 }

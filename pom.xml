@@ -37,7 +37,7 @@
                         <include>**Test*.java</include>
                     </includes>
                     <properties>
-                        <!--<includeTags>simulated</includeTags>-->
+                        <includeTags>nested</includeTags>
                         <!--<excludeTags>rest</excludeTags>-->
                         <!--
                         <configurationParameters>

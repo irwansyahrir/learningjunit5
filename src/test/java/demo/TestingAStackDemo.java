@@ -3,6 +3,7 @@ package demo;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.util.EmptyStackException;
@@ -10,6 +11,7 @@ import java.util.Stack;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@Tag("nested")
 public class TestingAStackDemo {
     Stack<Object> stack;
 
@@ -32,25 +34,25 @@ public class TestingAStackDemo {
         }
 
         @Test
-        @DisplayName("1 is empty")
+        @DisplayName("is empty")
         void isEmpty() {
             assertTrue(stack.isEmpty());
         }
 
         @Test
-        @DisplayName("2 throws EmptyStackException when popped")
+        @DisplayName("throws EmptyStackException when popped")
         void throwsExceptionWhenPopped() {
             assertThrows(EmptyStackException.class, () -> stack.pop());
         }
 
         @Test
-        @DisplayName("3 throws EmptyStackException when peeked")
+        @DisplayName("throws EmptyStackException when peeked")
         void throwsExceptionWhenPeeked() {
             assertThrows(EmptyStackException.class, () -> stack.peek());
         }
 
         @Nested
-        @DisplayName("4 after pushing an element")
+        @DisplayName("after pushing an element")
         class AfterPushing {
 
             String anElement = "an element";

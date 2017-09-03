@@ -1,8 +1,9 @@
-package simulated.external;
+package simplified.external;
 
 public class Payment {
     private long id;
     private PaymentType paymentType;
+    private Agreement agreement;
 
     public void setId(long id) {
         this.id = id;
@@ -18,5 +19,13 @@ public class Payment {
 
     public PaymentType getPaymentType() {
         return paymentType;
+    }
+
+    public void setAgreement(Agreement agreement) {
+        this.agreement = agreement;
+    }
+
+    public Agreement getAgreement() {
+        return agreement;
     }
 }
