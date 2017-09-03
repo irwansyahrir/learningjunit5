@@ -1,6 +1,7 @@
 package simplified;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -21,7 +22,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assumptions.assumingThat;
 import static org.junit.jupiter.params.provider.EnumSource.Mode.EXCLUDE;
 
-@Tag("simulated")
+@Tag("original")
+@DisplayName("Payment Without Agreement")
 public class PaymentMapperTest {
     private static final long PAYMENT_ID_LONG = 123L;
     private static final String DTO_ID_STRING = "123";

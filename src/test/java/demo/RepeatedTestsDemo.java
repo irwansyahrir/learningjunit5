@@ -6,6 +6,7 @@ import java.util.logging.Logger;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@Tag("demo")
 public class RepeatedTestsDemo {
 
     private Logger logger = Logger.getLogger(RepeatedTestsDemo.class.getName());

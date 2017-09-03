@@ -2,6 +2,7 @@ package demo;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.converter.ConvertWith;
@@ -19,6 +20,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.params.provider.EnumSource.Mode.EXCLUDE;
 import static org.junit.jupiter.params.provider.EnumSource.Mode.MATCH_ALL;
 
+@Tag("demo")
 public class DemoParameterizedTest {
 
     @ParameterizedTest

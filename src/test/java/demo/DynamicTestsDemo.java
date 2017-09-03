@@ -3,6 +3,7 @@ package demo;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DynamicNode;
 import org.junit.jupiter.api.DynamicTest;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.TestFactory;
 import org.junit.jupiter.api.function.ThrowingConsumer;
 
@@ -15,6 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.DynamicContainer.dynamicContainer;
 import static org.junit.jupiter.api.DynamicTest.dynamicTest;
 
+@Tag("demo")
 public class DynamicTestsDemo {
 
     // This will result in a JUnitException!

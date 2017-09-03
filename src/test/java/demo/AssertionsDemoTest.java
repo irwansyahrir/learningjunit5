@@ -1,12 +1,14 @@
 package demo;
 
 import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static java.time.Duration.ofMillis;
 import static java.time.Duration.ofMinutes;
 import static org.junit.jupiter.api.Assertions.*;
 
+@Tag("demo")
 class AssertionsDemoTest {
 
     Person person = new Person("John", "Doe");

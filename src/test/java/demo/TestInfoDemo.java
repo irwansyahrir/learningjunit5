@@ -5,6 +5,7 @@ import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@Tag("demo")
 @DisplayName("TestInfo Demo")
 public class TestInfoDemo {
 

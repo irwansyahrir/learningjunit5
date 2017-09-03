@@ -9,9 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 @Tag("fast")
 @Tag("model")
 public class TaggingDemoTests {
-
-    //TODO: how does this work? what use cases?
-
+    
     @Test
     @Tag("taxes")
     void testingTaxCalculation() {

@@ -1,6 +1,7 @@
 package demo;
 
 import org.junit.jupiter.api.DynamicTest;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.TestFactory;
 
 import java.util.Arrays;
@@ -10,6 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.DynamicTest.dynamicTest;
 
+@Tag("demo")
 interface TestInterfaceDynamicTestsDemo {
 
     @TestFactory
