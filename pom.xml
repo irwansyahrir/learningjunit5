@@ -34,15 +34,11 @@
                 <version>2.19.1</version>
                 <configuration>
                     <includes>
-                        <!--<include>**/demo/*Test*.java</include>-->
-                        <!--<include>**/first/*Test*.java</include>-->
-                        <!--<include>**/realworld/*Test*.java</include>-->
-                        <include>**/rest/*Test*.java</include>
-                        <!--<include>**/simulated/*Test*.java</include>-->
+                        <include>**Test*.java</include>
                     </includes>
                     <properties>
-                        <!-- <includeTags>fast</includeTags> -->
-                        <excludeTags>slow</excludeTags>
+                        <!--<includeTags>simulated</includeTags>-->
+                        <!--<excludeTags>rest</excludeTags>-->
                         <!--
                         <configurationParameters>
                             junit.jupiter.conditions.deactivate = *
