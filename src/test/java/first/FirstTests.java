@@ -14,6 +14,7 @@ public class FirstTests {
 
     @Test
     @DisplayName("Testing 1+1 = 2")
+//    @DisplayName("Same Display Name")
     void myFirstTest() {
         assertEquals(2, 1 + 1);
     }
@@ -21,12 +22,14 @@ public class FirstTests {
     @Test
     @Disabled
     @DisplayName("Demonstrating fail() and @Disabled ╯°□°）╯")
+//    @DisplayName("Same Display Name")
     void alwaysFails() {
         fail("I am destined to fail");
     }
 
     @Test
     @DisplayName("Testing a Calculator 😎")
+//    @DisplayName("Same Display Name")
     void testCalculator(TestInfo testInfo) {
         Calculator calculator = new Calculator();
         assertEquals(2, calculator.add(1, 1), "1 + 1 should equal 2");
