@@ -1,14 +1,15 @@
 package myusecase;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
 import myusecase.domain.DtoWithId;
 import myusecase.domain.ForeignPaymentDTO;
 import myusecase.external.Agreement;
 import myusecase.external.Payment;
 import myusecase.external.PaymentType;
+import myusecase.external.Periode;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 

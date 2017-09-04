@@ -1,16 +1,17 @@
 package myusecase;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Nested;
-import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
 import myusecase.domain.DomesticPaymentDTO;
 import myusecase.domain.ForeignPaymentDTO;
 import myusecase.domain.TransferDTO;
 import myusecase.external.Agreement;
 import myusecase.external.Payment;
 import myusecase.external.PaymentType;
+import myusecase.external.Periode;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 
