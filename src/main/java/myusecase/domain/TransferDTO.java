@@ -1,4 +1,4 @@
-package simplified.domain;
+package myusecase.domain;
 
 public class TransferDTO implements DtoWithId{
 

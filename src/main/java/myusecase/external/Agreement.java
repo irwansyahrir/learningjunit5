@@ -1,6 +1,6 @@
-package simplified.external;
+package myusecase.external;
 
-import simplified.Periode;
+import myusecase.Periode;
 
 import java.time.LocalDate;
 

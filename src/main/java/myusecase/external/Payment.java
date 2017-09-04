@@ -1,4 +1,4 @@
-package simplified.external;
+package myusecase.external;
 
 public class Payment {
     private long id;

@@ -1,4 +1,4 @@
-package simplified.domain;
+package myusecase.domain;
 
 public interface DtoWithId {
 }

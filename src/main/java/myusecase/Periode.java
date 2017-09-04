@@ -1,4 +1,4 @@
-package simplified;
+package myusecase;
 
 public enum Periode {
     DAILY

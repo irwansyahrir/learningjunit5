@@ -1,13 +1,13 @@
-package simplified;
+package myusecase;
 
 
-import simplified.domain.AgreementDTO;
-import simplified.domain.DomesticPaymentDTO;
-import simplified.domain.DtoWithId;
-import simplified.domain.ForeignPaymentDTO;
-import simplified.domain.TransferDTO;
-import simplified.external.Agreement;
-import simplified.external.Payment;
+import myusecase.domain.AgreementDTO;
+import myusecase.domain.DomesticPaymentDTO;
+import myusecase.domain.DtoWithId;
+import myusecase.domain.ForeignPaymentDTO;
+import myusecase.domain.TransferDTO;
+import myusecase.external.Agreement;
+import myusecase.external.Payment;
 
 import java.time.format.DateTimeFormatter;
 

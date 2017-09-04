@@ -1,4 +1,4 @@
-package simplified;
+package myusecase;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -8,12 +8,12 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestFactory;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
-import simplified.domain.DomesticPaymentDTO;
-import simplified.domain.DtoWithId;
-import simplified.domain.ForeignPaymentDTO;
-import simplified.domain.TransferDTO;
-import simplified.external.Payment;
-import simplified.external.PaymentType;
+import myusecase.domain.DomesticPaymentDTO;
+import myusecase.domain.DtoWithId;
+import myusecase.domain.ForeignPaymentDTO;
+import myusecase.domain.TransferDTO;
+import myusecase.external.Payment;
+import myusecase.external.PaymentType;
 
 import java.util.stream.Stream;
 
