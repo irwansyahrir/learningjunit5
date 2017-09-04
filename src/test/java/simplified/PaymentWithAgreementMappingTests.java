@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
 
 @Tag("original")
-@DisplayName("Payment With Agreement Mapping")
+@DisplayName("Mapping payments with agreement")
 class PaymentWithAgreementMappingTests {
     private static final long PAYMENT_ID = 111L;
 
