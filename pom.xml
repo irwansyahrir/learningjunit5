@@ -37,7 +37,7 @@
                         <include>**Test*.java</include>
                     </includes>
                     <properties>
-                        <includeTags>original</includeTags>
+                        <includeTags>focus</includeTags>
                         <!--<excludeTags>rest</excludeTags>-->
                         <!--
                         <configurationParameters>
