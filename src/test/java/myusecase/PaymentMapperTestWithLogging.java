@@ -6,6 +6,7 @@ import myusecase.domain.ForeignPaymentDTO;
 import myusecase.external.Agreement;
 import myusecase.external.Payment;
 import myusecase.external.PaymentType;
+import myusecase.external.Periode;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
