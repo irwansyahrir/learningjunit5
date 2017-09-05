@@ -49,6 +49,8 @@ public class PaymentMapperTestUsingReporter {
         payment.setPaymentType(PaymentType.TRANSFER);
         DtoWithId dto = mapper.map(payment);
         assertEquals(DTO_ID_STRING, ((TransferDTO) dto).transferId);
+        System.out.println("PaymentType = " + payment.getPaymentType().toString());
+        testReporter.publishEntry("What a key", "What a value!");
         testReporter.publishEntry("Payment type", payment.getPaymentType().toString());
     }
 }

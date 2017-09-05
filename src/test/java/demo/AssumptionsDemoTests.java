@@ -10,8 +10,6 @@ import static org.junit.jupiter.api.Assumptions.assumingThat;
 @Tag("demo")
 public class AssumptionsDemoTests {
 
-    //TODO: imagine scenarios to use Assumptions. This looks like a kind of filter.
-
     @Test
     void testOnlyOnCiServer() {
         assumeTrue("CI".equals(System.getenv("ENV")));
