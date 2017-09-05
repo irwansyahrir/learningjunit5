@@ -1,5 +1,6 @@
 package myusecase.external;
 
+
 import java.time.LocalDate;
 
 public class Agreement {
